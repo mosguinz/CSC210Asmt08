@@ -16,11 +16,11 @@ public class CoffeeShopEmployee {
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        /* (3)(1) */
         int amt = promptEmployeeAmount();
 
-        Employee[] employees = new Employee[amt];
-
         /* (3)(2) and (3)(3) */
+        Employee[] employees = new Employee[amt];
         for (int i = 0; i < employees.length; i++) {
             System.out.printf("%n[Employee #%d]%n", i + 1);
 
@@ -68,5 +68,19 @@ public class CoffeeShopEmployee {
             scan.nextLine();
             return amt;
         }
+    }
+
+    /**
+     * Print the employee profile. (3)(4).
+     *
+     * @param e An instance of {@link Employee}.
+     * @see {@link EmployeeTest#printProfile(Employee)}
+     */
+    public static void printProfile(Employee e) {
+        System.out.println("[Employee profile]");
+        System.out.printf("Name: %s%n", e.getName());
+        System.out.printf("Employee ID: %s%n", e.getEmployeeId());
+        System.out.printf("Email: %s%n", e.getEmail());
+        System.out.printf("Department ID: %s%n%n", e.getDeptId());
     }
 }
