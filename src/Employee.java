@@ -33,7 +33,10 @@ public class Employee {
     }
 
 
-    /* Setters and getters for (2)(1)(g)(i) and (2)(1)(g)(ii), respectively. */
+    /*
+        Setters and getters for (2)(1)(g)(i) and (2)(1)(g)(ii), respectively.
+        Note that there are no validation being performed in the setters.
+    */
 
     public String getEmployeeId() {
         return employeeId;
