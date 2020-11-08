@@ -15,7 +15,7 @@ public class RectangleTest {
      * The {@link Rectangle} class can be found
      * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Rectangle.java">here</a>.
      *
-     * @see {@link Rectangle}
+     * @see Rectangle
      */
     public static void main(String[] args) {
         Rectangle r1 = new Rectangle(4, 40);

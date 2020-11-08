@@ -15,7 +15,7 @@ public class EmployeeTest {
      * The {@link Employee} class can be found
      * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Employee.java">here</a>.
      *
-     * @see {@link Employee}
+     * @see Employee
      */
     public static void main(String[] args) {
         String name = "Mos";

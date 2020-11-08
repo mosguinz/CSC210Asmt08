@@ -21,8 +21,8 @@ public class CoffeeShopEmployee {
      * The {@link Employee} class can be found
      * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Employee.java">here</a>.
      *
-     * @see {@link Employee}
-     * @see {@link EmployeeTest}
+     * @see Employee
+     * @see EmployeeTest
      */
     public static void main(String[] args) {
         /* (3)(1) */
