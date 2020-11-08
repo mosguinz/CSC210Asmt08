@@ -16,7 +16,37 @@ public class CoffeeShopEmployee {
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        promptEmployeeAmount();
+        int amt = promptEmployeeAmount();
+
+        Employee[] employees = new Employee[amt];
+
+        /* (3)(2) and (3)(3) */
+        for (int i = 0; i < employees.length; i++) {
+            System.out.printf("%n[Employee #%d]", i + 1);
+
+            /* This could've been nicer, but oh well... */
+            System.out.print("Enter the name: ");
+            String name = scan.nextLine();
+            System.out.print("Enter the email: ");
+            String email = scan.nextLine();
+            System.out.print("Enter the employee ID: ");
+            String employeeID = scan.nextLine();
+            System.out.print("Enter the department ID: ");
+            int departmentID = scan.nextInt();
+
+            /*
+                We could just use the constructor but (3)(3)
+                requires the use of setters.
+
+                Here, the objects are instantiated and assigned values
+                separately in order to satisfy (3)(2) and (3)(3), respectively.
+            */
+            Employee e = employees[i] = new Employee();
+            e.setName(name);
+            e.setEmail(email);
+            e.setEmployeeId(employeeID);
+            e.setDeptId(departmentID);
+        }
     }
 
     /**
