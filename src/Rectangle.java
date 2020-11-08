@@ -14,7 +14,7 @@ public class Rectangle {
     private double width = 1;
     private double height = 1;
 
-    /* (1)(1)(b) */
+    /* (1)(1)(b) - redundant no-arg constructor */
     Rectangle() {
 
     }
