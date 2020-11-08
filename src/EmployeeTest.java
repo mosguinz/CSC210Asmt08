@@ -9,6 +9,14 @@
  */
 
 public class EmployeeTest {
+    /**
+     * Test cases for the rest of part (2).
+     * <p>
+     * The {@link Employee} class can be found
+     * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Employee.java">here</a>.
+     *
+     * @see {@link Employee}
+     */
     public static void main(String[] args) {
         String name = "Mos";
         String id = "921425216";
