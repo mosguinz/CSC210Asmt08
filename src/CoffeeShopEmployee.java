@@ -18,6 +18,7 @@ public class CoffeeShopEmployee {
     public static void main(String[] args) {
         /* (3)(1) */
         int amt = promptEmployeeAmount();
+        System.out.printf("Creating %d employee(s)...%n%n", amt);
 
         /* (3)(2) and (3)(3) */
         Employee[] employees = new Employee[amt];
@@ -25,9 +26,9 @@ public class CoffeeShopEmployee {
 
         /* (3)(4) */
         System.out.printf("Successfully created %d employee(s).%n", employees.length);
-        System.out.println("Below are their profiles for your amusement.");
+        System.out.println("Below are their profiles for your amusement.\n");
         for (int i = 0; i < employees.length; i++) {
-            System.out.printf("Entry #%d", i + 1);
+            System.out.printf("Entry #%d - ", i + 1);
             printProfile(employees[i]);
         }
     }
@@ -59,7 +60,7 @@ public class CoffeeShopEmployee {
      */
     private static void createEmployees(Employee[] employees) {
         for (int i = 0; i < employees.length; i++) {
-            System.out.printf("%n[Employee #%d]%n", i + 1);
+            System.out.printf("[Employee #%d]%n", i + 1);
 
             /* This could've been nicer, but oh well... */
             System.out.print("Enter the name: ");
@@ -71,6 +72,8 @@ public class CoffeeShopEmployee {
             System.out.print("Enter the department ID: ");
             int departmentID = scan.nextInt();
             scan.nextLine();
+
+            System.out.println();
 
             /*
                 We could just use the constructor but (3)(3)
