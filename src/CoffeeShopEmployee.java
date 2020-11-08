@@ -21,6 +21,36 @@ public class CoffeeShopEmployee {
 
         /* (3)(2) and (3)(3) */
         Employee[] employees = new Employee[amt];
+        createEmployees(employees);
+
+    }
+
+    /**
+     * Prompt and validate the amount of {@link Employee} objects to
+     * instantiate. The minimum (inclusive) amount is set by {@link
+     * #MIN_EMPLOYEE} (3 by default). Satisfies (3)(1).
+     *
+     * @return The valid number of employee to create.
+     */
+    private static int promptEmployeeAmount() {
+        while (true) {
+            System.out.print("Enter the number of employees you want to create: ");
+            int amt = scan.nextInt();
+            if (amt < MIN_EMPLOYEE) {
+                System.out.printf("Invalid amount. Must be at least %d.%n", MIN_EMPLOYEE);
+                continue;
+            }
+            scan.nextLine();
+            return amt;
+        }
+    }
+
+    /**
+     * Prompt user for values to create employees. (2)(2) and (2)(3).
+     *
+     * @param employees An array of {@link Employee} objects.
+     */
+    private static void createEmployees(Employee[] employees) {
         for (int i = 0; i < employees.length; i++) {
             System.out.printf("%n[Employee #%d]%n", i + 1);
 
@@ -47,26 +77,6 @@ public class CoffeeShopEmployee {
             e.setEmail(email);
             e.setEmployeeId(employeeID);
             e.setDeptId(departmentID);
-        }
-    }
-
-    /**
-     * Prompt and validate the amount of {@link Employee} objects to
-     * instantiate. The minimum (inclusive) amount is set by {@link
-     * #MIN_EMPLOYEE} (3 by default). Satisfies (3)(1).
-     *
-     * @return The valid number of employee to create.
-     */
-    private static int promptEmployeeAmount() {
-        while (true) {
-            System.out.print("Enter the number of employees you want to create: ");
-            int amt = scan.nextInt();
-            if (amt < MIN_EMPLOYEE) {
-                System.out.printf("Invalid amount. Must be at least %d.%n", MIN_EMPLOYEE);
-                continue;
-            }
-            scan.nextLine();
-            return amt;
         }
     }
 
