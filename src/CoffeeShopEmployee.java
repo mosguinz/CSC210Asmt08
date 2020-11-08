@@ -15,6 +15,15 @@ public class CoffeeShopEmployee {
     public static final int MIN_EMPLOYEE = 3;
     private static final Scanner scan = new Scanner(System.in);
 
+    /**
+     * Uses the {@link Employee} class.
+     * <p>
+     * The {@link Employee} class can be found
+     * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Employee.java">here</a>.
+     *
+     * @see {@link Employee}
+     * @see {@link EmployeeTest}
+     */
     public static void main(String[] args) {
         /* (3)(1) */
         int amt = promptEmployeeAmount();
