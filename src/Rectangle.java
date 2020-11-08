@@ -29,17 +29,10 @@ public class Rectangle {
         return width;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
 
     /**
      * @return The area of the rectangle. (1)(1)(d).
