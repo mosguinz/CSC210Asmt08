@@ -22,7 +22,7 @@ public class CoffeeShopEmployee {
 
         /* (3)(2) and (3)(3) */
         for (int i = 0; i < employees.length; i++) {
-            System.out.printf("%n[Employee #%d]", i + 1);
+            System.out.printf("%n[Employee #%d]%n", i + 1);
 
             /* This could've been nicer, but oh well... */
             System.out.print("Enter the name: ");
@@ -33,6 +33,7 @@ public class CoffeeShopEmployee {
             String employeeID = scan.nextLine();
             System.out.print("Enter the department ID: ");
             int departmentID = scan.nextInt();
+            scan.nextLine();
 
             /*
                 We could just use the constructor but (3)(3)
@@ -64,6 +65,7 @@ public class CoffeeShopEmployee {
                 System.out.printf("Invalid amount. Must be at least %d.%n", MIN_EMPLOYEE);
                 continue;
             }
+            scan.nextLine();
             return amt;
         }
     }
