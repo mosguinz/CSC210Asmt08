@@ -72,9 +72,11 @@ public class CoffeeShopEmployee {
 
     /**
      * Print the employee profile. (3)(4).
+     * <p>
+     * This is the same method used in {@link EmployeeTest}.
      *
      * @param e An instance of {@link Employee}.
-     * @see {@link EmployeeTest#printProfile(Employee)}
+     * @see EmployeeTest#printProfile(Employee)
      */
     public static void printProfile(Employee e) {
         System.out.println("[Employee profile]");
