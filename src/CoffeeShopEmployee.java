@@ -23,6 +23,13 @@ public class CoffeeShopEmployee {
         Employee[] employees = new Employee[amt];
         createEmployees(employees);
 
+        /* (3)(4) */
+        System.out.printf("Successfully created %d employee(s).%n", employees.length);
+        System.out.println("Below are their profiles for your amusement.");
+        for (int i = 0; i < employees.length; i++) {
+            System.out.printf("Entry #%d", i + 1);
+            printProfile(employees[i]);
+        }
     }
 
     /**
