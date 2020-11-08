@@ -10,25 +10,16 @@
 
 public class Rectangle {
 
-    /* (1)(a) */
+    /* (1)(1)(a) */
     private double width = 1;
     private double height = 1;
 
-    /**
-     * Instantiate a {@link Rectangle} object with the default {@link #width}
-     * and {@link #height}. (1)(b).
-     */
+    /* (1)(1)(b) */
     Rectangle() {
 
     }
 
-    /**
-     * Instantiate a {@link Rectangle} object with the specified {@code width}
-     * and {@code height}. (1)(c)
-     *
-     * @param width  The width of the rectangle.
-     * @param height The height of the rectangle.
-     */
+    /* (1)(1)(c) */
     Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
@@ -51,14 +42,14 @@ public class Rectangle {
     }
 
     /**
-     * @return The area of the rectangle.
+     * @return The area of the rectangle. (1)(1)(d).
      */
     public double getArea() {
         return width * height;
     }
 
     /**
-     * @return The perimeter of the rectangle.
+     * @return The perimeter of the rectangle. (1)(1)(e).
      */
     public double getPerimeter() {
         return (2 * width) + (2 * height);
