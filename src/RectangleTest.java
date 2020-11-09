@@ -8,12 +8,51 @@
  * Semester: Fall 2020
  */
 
+class Rectangle {
+
+    /* (1)(1)(a) */
+    private double width = 1;
+    private double height = 1;
+
+    /* (1)(1)(b) - redundant no-arg constructor */
+    Rectangle() {
+
+    }
+
+    /* (1)(1)(c) */
+    Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+
+    /**
+     * @return The area of the rectangle. (1)(1)(d).
+     */
+    public double getArea() {
+        return width * height;
+    }
+
+    /**
+     * @return The perimeter of the rectangle. (1)(1)(e).
+     */
+    public double getPerimeter() {
+        return (2 * width) + (2 * height);
+    }
+
+}
+
 public class RectangleTest {
     /**
      * Test cases for the rest of part (1).
-     * <p>
-     * The {@link Rectangle} class can be found
-     * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Rectangle.java">here</a>.
      *
      * @see Rectangle
      */
