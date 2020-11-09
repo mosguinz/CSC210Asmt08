@@ -19,7 +19,7 @@ public class CoffeeShopEmployee {
      * Uses the {@link Employee} class.
      * <p>
      * The {@link Employee} class can be found
-     * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/Employee.java">here</a>.
+     * <a href="https://github.com/mosguinz-csc210-03/CSC210Asmt08/blob/main/src/EmployeeTest.java">here</a>.
      *
      * @see Employee
      * @see EmployeeTest
